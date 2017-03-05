@@ -1,0 +1,33 @@
+<section class="message">
+
+    <div class="message-header">
+        <a><span class="chat">聊天</span></a>
+        <a><span class="inter active">互动</span></a>
+    </div>
+
+    <div class="chatList">
+        <ul class="">
+            <li class="chatItem"><a>对我感兴趣</a></li>
+            <li class="chatItem"><a>看过我</a></li>
+            <li class="chatItem active"><a>新职位</a></li>
+            <li class="underline"></li>
+        </ul>
+    </div>
+
+</section>
+
+<ul class="message-lists">
+    <li ng-repeat="message in messageList" class="messItem clearfix">
+        <a>
+            <div class="messImg">
+                <img ng-src="{{message.imgUrl}}" alt="{{message.companyName}}">
+            </div>
+            <div class="messInfo">
+                <h3>{{message.companyName}} {{message.hrPos}}</h3>
+                <time>{{message.time}}</time>
+                <p>发布了<span class="text">{{message.position}}</span></p>
+                <p><span class="icon-bag"></span>{{message.exp}}<span class="icon-benke-"></span>{{message.edu}}<span class="icon-jine"></span>{{message.pay}}</p>
+            </div>
+        </a>
+    </li>
+</ul>
