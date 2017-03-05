@@ -1,5 +1,5 @@
 "# Boss" 
-#扫码可以用手机访问
+# scan and show in your phone
 https://qq756585379.github.io/Boss
 ![ABC](https://github.com/qq756585379/Boss/blob/master/0.png)
 ![ABC](https://github.com/qq756585379/Boss/blob/master/1.png)
