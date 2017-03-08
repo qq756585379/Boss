@@ -41,5 +41,13 @@
             }, function(err) {
                 $scope.loading = false;
             });
+
+        $scope.showDetail = function(){
+            //var article = document.getElementsByTagName('article')[0];
+            //var iconbottom = document.getElementsByClassName('bottomIconSpan');
+            //article.style.height = "auto";
+            //iconbottom.removeClass('icon-bottom');
+            //iconbottom.addClass('icon-top');
+        }
     }]);
 })(angular);

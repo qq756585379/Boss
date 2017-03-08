@@ -22,4 +22,19 @@
             });
     }]);
 
+    messageModule.directive('toggleClass', function(){
+        return {
+            restrict: 'A',
+            scope: {
+                toggleClass: '@'
+            },
+            link: function($scope, $element){
+                $element.on('click', function(){
+                    $element.parent().children().children().removeClass('active');
+                    $element.children().addClass('active');
+                });
+            }
+        };
+    });
+
 })(angular);
